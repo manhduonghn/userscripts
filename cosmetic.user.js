@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         Cosmetic Ad Block for Bromite
 // @namespace    manhduonghn
-// @version      2024.11.06
+// @version      2024.11.07
 // @description  Blocks annoying elements in pages, sourced from many different filter lists
 // @author       manhduonghn
 // @match        *://*/*
@@ -15,7 +15,7 @@
 /// @stats blockers for 9 domains, injected CSS rules for 0 domains
 {
     let log = function (...data) {
-        console.log("[Cosmetic filters by manhduonghn (v2024.11.06 full)]:", ...data);
+        console.log("[Cosmetic filters by manhduonghn (v2024.11.07 full)]:", ...data);
     }
 
 
@@ -28,7 +28,7 @@
 
     let deduplicatedStrings = ["","#pmadv"];
     let injectionRules = {};
-    let rules = {"bongdaplus.vn":"div.small.fst.news:nth-of-type(1),div.small.fst.news:nth-of-type(3),div[class=\"hide-w\"],div[class=\"mix-story\"],div[class=\"mix-tags\"],div[class=\"mix-tips tip-hot\"]","gocphimz.net":1,"hayghe.pro":1,"ios.codevn.net":".swal2-backdrop-show,.swal2-show.swal2-icon-error","m.genk.vn":"#adm-slot-7269","phimmoichill.biz":"#chilladv,#download,#headermbads,#headerpcads,#mobiads,#pcads,#pmadv,.off-ads","phimnhanhz.com":"#container-ads,#popup-giua-man-hinh,.banner-top","truyensextv1.com":"#sticky-footer","vnexpress.net":"#footer \u003e .width_common.coppy_right_info \u003e .contact_info.width_common \u003e .ads_btn.guitoasoan_btn,#footer \u003e .width_common.coppy_right_info \u003e .contact_info.width_common \u003e .vlight.guitoasoan_btn,#footer \u003e .width_common.coppy_right_info \u003e .vne_app.app_info.width_common,#footer \u003e .width_common.coppy_right_info \u003e .vne_app.app_info.width_common \u003e .app-ns.left,#footer \u003e .width_common.coppy_right_info \u003e .vne_app.app_info.width_common \u003e .app-vm.right \u003e [href^=\"https://play.google.com/store/apps/details\"],#footer \u003e .width_common.coppy_right_info \u003e .vne_app.app_info.width_common \u003e p.left \u003e [href^=\"https://play.google.com/store/apps/details\"],#footer \u003e .width_common.coppy_right_info \u003e .vne_app.app_info.width_common \u003e p.right \u003e [href^=\"https://play.google.com/store/apps/details\"],#newsletters \u003e .box-newsletters.box-300.box-newsletter-vne,.bottom.icon-podcast-pin,.box-raovat-v2.box-category,.button-adblock,.js_installvneapp.installvneapp--small.installvneapp,a[id=\"button-adblock\"],a[id=\"podcastIcon\"],div.width_common.menu_grid2:nth-of-type(3),div.wrap-hd-adblock,div[class=\"inner_section section_wrap_poll mb20\"],div[id=\"box_register_mail\"],section[class=\"section box_category_v2 section_ads_300x250\"],section[id=\"sync_bgu_and_masthead\"]"};
+    let rules = {"bongdaplus.vn":"div.small.fst.news:nth-of-type(1),div.small.fst.news:nth-of-type(3),div[class=\"hide-w\"],div[class=\"mix-story\"],div[class=\"mix-tags\"],div[class=\"mix-tips tip-hot\"]","gocphimz.net":1,"hayghe.pro":1,"ios.codevn.net":".swal2-backdrop-show,.swal2-show.swal2-icon-error","m.genk.vn":"#adm-slot-7269","phimmoichill.biz":"#chilladv,#download,#headermbads,#headerpcads,#mobiads,#pcads,#pmadv,.off-ads","phimnhanhz.com":"#container-ads,#popup-giua-man-hinh,.banner-top","truyensextv1.com":"#sticky-footer","vnexpress.net":"#footer \u003e div.width_common.coppy_right_info \u003e .contact_info.width_common \u003e .ads_btn.guitoasoan_btn,#footer \u003e div.width_common.coppy_right_info \u003e .vne_app.app_info.width_common,#newsletters-details \u003e .wrap,#newsletters-footer \u003e .wrap,#newsletters-sidebar \u003e .wrap \u003e .box-newsletter-new__left,#newsletters-top \u003e .wrap,#thongtindoanhnghiep,.bottom.icon-podcast-pin,.box-ebank-qt.box-category,.box-news-other-site.container,.box-raovat-v2.box-category,.box-wiki-kidlab.box-shop-sell-vertical.box-shop-sell.box-category,.button-adblock,.clearfix.box_300_targer.section,.col-right-top,.coppy_right_info.width_common.newsletter_sidebar,.flexbox.header-box-tvol-vs,.fs_parent_box.wrap-box-business.container,.js_installvneapp.installvneapp--small.installvneapp,.list-link,.mb20.section_wrap_poll.inner_section,.newsletters-footer.box-newsletters.mb15.box-newsletter-new,.newsletters-mb-footer.box-newsletters.mb15.box-newsletter-new,.newsletters-sidebar.box-newsletters.mb15.box-newsletter-new,.owl-carousel,.slogan,.ss-content \u003e .downloadapp.contact,.ss-content \u003e div.contact \u003e .ads,.width_common.block_scoll_menu \u003e div.width_common.coppy_right_info \u003e .contact_info.width_common \u003e .ads_btn.guitoasoan_btn,.width_common.block_scoll_menu \u003e div.width_common.coppy_right_info \u003e .vne_app.app_info.width_common,.wrap-contact \u003e .downloadapp.contact,.wrap-contact \u003e div.contact,div.width_common.menu_grid2:nth-of-type(25),div.width_common.menu_grid2:nth-of-type(3),div.wrap-hd-adblock,section.box_category_v2_home.box_category_v2.box_category.section:nth-of-type(16),section.box_category_v2_home.box_category_v2.box_category.section:nth-of-type(24),ul.list-menu-footer:nth-of-type(5)"};
     let defaultRules = rules[""];
 
 
