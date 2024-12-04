@@ -39,7 +39,7 @@ jobs:
     - name: Release script 
       uses: softprops/action-gh-release@v1
       with:
-        files: cosmetic.user.js
+        files: cosmetic.js
         name: Userscript ${{ env.DATE }}
         tag_name: ${{ env.DATE }}
       env:
