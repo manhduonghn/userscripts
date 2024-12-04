@@ -1,17 +1,4 @@
-// ==UserScript==
-// @name         Cosmetic Ad Block for Bromite{{if .isLite}} (Lite){{end}}
-// @namespace    manhduonghn
-// @version      {{.version}}
-// @description  Blocks annoying elements in {{if .isLite}}top {{.topDomainCount}} domains{{else}}pages{{end}}, sourced from many different filter lists
-// @author       manhduonghn
-// @match        *://*/*
-// @grant        none
-// @run-at       document-start
-// @homepage     https://github.com/manhduonghn/userscripts
-// @updateURL    https://manhduonghn.github.io/userscripts/cosmetic.user.js
-// @downloadURL  https://manhduonghn.github.io/userscripts/cosmetic.user.js
-// ==/UserScript==
-/// @stats {{.statistics}}
+// Cosmetic
 {
     let log = function (...data) {
         console.log("[Cosmetic filters by manhduonghn (v{{.version}} {{if .isLite}}lite{{else}}full{{end}})]:", ...data);
