@@ -1,1 +1,1 @@
-https://raw.githubusercontent.com/luxysiv/custom-filters/refs/heads/main/my-rules.txt
+https://manhduonghn.github.io/custom-filters/filters.txt
