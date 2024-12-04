@@ -1,4 +1,4 @@
-// Cosmetic
+/// @stats {{.statistics}}
 {
     let log = function (...data) {
         console.log("[Cosmetic filters by manhduonghn (v{{.version}} {{if .isLite}}lite{{else}}full{{end}})]:", ...data);
