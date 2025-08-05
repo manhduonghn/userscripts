@@ -2,7 +2,7 @@
 /// @stats blockers for 28901 domains, injected CSS rules for 1 domains
 {
     let log = function (...data) {
-        console.log("[Cosmetic filters by manhduonghn (v2025.08.04 full)]:", ...data);
+        console.log("[Cosmetic filters by manhduonghn (v2025.08.05 full)]:", ...data);
     }
 
 
